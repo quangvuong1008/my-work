@@ -21,7 +21,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'http://www.thaida.local';
+	public $baseURL = 'http://www.myworks.local';
 
 	/*
 	|--------------------------------------------------------------------------

@@ -36,21 +36,21 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 
 2 - import DB: in db folder into local mysql Server (if using local db)
 
-3 - choose domain, example: thaida.local
+3 - choose domain, example: myworks.local
 
 4 - modify hosts file (linux /etc/hosts, windows in systems32)
 
-    127.0.0.1  www.thaida.local
+    127.0.0.1  www.myworks.local
 
 change base url in app/config/App.php
 
-    public $baseURL = 'http://www.thaida.local';
+    public $baseURL = 'http://www.myworks.local';
 
 5 - config virtual hosts
 
     <VirtualHost *:80> 
         DocumentRoot "D:\ardor_code\mywork.com.vn\public_html"
-        ServerName www.thaida.local
+        ServerName www.myworks.local
         <Directory D:\ardor_code\mywork.com.vn\public_html>
             Options Indexes FollowSymLinks MultiViews
             AllowOverride all
@@ -65,10 +65,10 @@ change base url in app/config/App.php
 Note:
 - db test
   
-        'hostname' => '128.199.129.187',
-        'username' => 'test',
-        'password' => '123456a@',
-        'database' => 'my_work',
+        'hostname' => 'localhost',
+        'username' => 'myworks',
+        'password' => 'myworks',
+        'database' => 'my_works',
 - change permision allow apache can write to folder
   
         writable/*

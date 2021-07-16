@@ -22,7 +22,7 @@ class Database extends \CodeIgniter\Database\Config
 	 *
 	 * @var string
 	 */
-	public $defaultGroup = 'default';
+	public $defaultGroup = 'tests';
 
 	/**
 	 * The default database connection.
@@ -60,11 +60,11 @@ class Database extends \CodeIgniter\Database\Config
 	public $tests = [
 		'DSN'      => '',
 		'hostname' => '127.0.0.1',
-		'username' => '',
-		'password' => '',
-		'database' => '',
-		'DBDriver' => '',
-		'DBPrefix' => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE.
+		'username' => 'myworks',
+		'password' => 'myworks',
+		'database' => 'my_works',
+		'DBDriver' => 'App\ThirdParty\MySQLi',
+		'DBPrefix' => '',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE.
 		'pConnect' => false,
 		'DBDebug'  => (ENVIRONMENT !== 'production'),
 		'cacheOn'  => false,
