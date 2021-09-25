@@ -232,10 +232,6 @@ class UserRecruitment extends BaseController
             $file->move($uploadPath, $avt);
         }
 
-        $recruitment_fields = (new UserRecruitmentFieldsModel());
-        foreach ($fields as $fds) {
-            $save_fields = $recruitment_fields->insert_fields($id, $fds);
-        }
         $save = $user_recruitment->update_change_recruitment(
             $id,
             $avt,
